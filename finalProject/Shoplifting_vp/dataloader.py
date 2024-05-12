@@ -14,16 +14,16 @@ def split_dataset(dataset, split_ratio=[0.8, 0.1, 0.1]):
     test_size = num_data - train_size - val_size
     return torch.utils.data.random_split(dataset, [train_size, val_size, test_size])
 
-class myUCF5Preprocessing(object):
-    def __init__(self, output_size=(112, 112)):
+class ShopliftingPreprocessing(object):
+    def __init__(self, output_size=(120, 120)):
         self.output_size = output_size
         self.normalize = transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 
     def __call__(self, video):
-        resized_video = np.zeros((3, self.output_size[0], self.output_size[1], 16))
+        resized_video = np.zeros((3, self.output_size[0], self.output_size[1], 30))
         
         # I choose the get first 16 frames, but ofc there are several other techniques...
-        for i in range(16):            
+        for i in range(30):            
             
             frame_np = video[i].numpy()
 
@@ -37,7 +37,7 @@ class myUCF5Preprocessing(object):
         return resized_video
 
 ## Dataloader Class
-class myUCF5Loader(torch.utils.data.Dataset):
+class ShopliftingDataLoader(torch.utils.data.Dataset):
     def __init__(self, root_dir, transform=None):
         self.root_dir = root_dir
         self.classes = sorted(os.listdir(root_dir))
