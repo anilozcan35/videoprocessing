@@ -1,0 +1,32 @@
+LSTM: https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+LSTM Pytorch: https://pytorch.org/docs/stable/generated/torch.nn.LSTM.html
+
+LSTM is dead: https://rbouadjenek.github.io/papers/transformers_Reda@Deakin.pdf
+LSTM is dead: https://www.youtube.com/watch?v=aFPxIc8Z8XA
+
+Transformer paper: https://arxiv.org/abs/1706.03762
+Transformer Illustrated tutorial: https://jalammar.github.io/illustrated-transformer/
+
+Transformer Image paper: https://arxiv.org/pdf/2010.11929
+Transformer Image repo: https://github.com/lucidrains/vit-pytorch?tab=readme-ov-file#masked-autoencoder
+
+Transformer Video paper: https://openaccess.thecvf.com/content/ICCV2021/papers/Arnab_ViViT_A_Video_Vision_Transformer_ICCV_2021_paper.pdf
+
+Pytorch Pretrained Webpage: https://pytorch.org/vision/0.18/
+
+
+Simplified Pytorch (Pytorch Lightning): https://lightning.ai/docs/pytorch/stable/starter/introduction.html
+
+Pytorch Tutorial:
+
+- Video Dersler: https://sebastianraschka.com/blog/2021/dl-course.html
+- Kitap: https://www.packtpub.com/product/machine-learning-with-pytorch-and-scikit-learn/9781801819312 
+
+Önemli Konferanslar:
+
+- CVPR
+- ECCV
+- ICCV
+
+
+
